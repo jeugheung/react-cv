@@ -14,7 +14,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Skills from '../../components/Skills/Skills';
 import { boxData, timeline, addressData, expertiseData, feedData } from '../../utils/data.js';
 
-
 const MainPage = () => {
 
   const [isSidebarOpen, setSidebarOpen] = useState(true);
