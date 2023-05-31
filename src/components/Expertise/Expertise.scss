@@ -1,0 +1,41 @@
+.expertise {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  &__date {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 82px;
+  }
+  &__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    color: #222935;
+  }
+
+  &__description {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    color: #667081;
+  }
+}

@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  &__content {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #222935;
+  }
+}

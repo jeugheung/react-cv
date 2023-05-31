@@ -1,0 +1,51 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+  &__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #26C17E;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+
+.reporter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__photo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  &__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #222935;
+  }
+
+  &__cite {
+    text-decoration: none;
+    color: #26C17E;
+  }
+}

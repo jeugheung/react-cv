@@ -1,0 +1,55 @@
+@import '../../utils/mixins';
+
+.main-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.content-NX {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-left: 36px;
+  padding-right: 36px;
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  gap: 50px;
+  padding-left: 36px;
+  padding-right: 36px;
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  @include break-md {
+    margin-left: 80px;
+  }
+}
+
+.absolute-but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color:#222935;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  z-index: 300;
+  right: 34px;
+  bottom: 0;
+  position: fixed;
+  cursor: pointer;
+  &:hover {
+    background-color: #26C17E;;
+  }
+}

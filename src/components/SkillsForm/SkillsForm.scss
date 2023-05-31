@@ -1,0 +1,116 @@
+.skills-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #26C17E;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  transition: 0.4s ease-in-out;
+  &__container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__field {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 361px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+ 
+  &__skill-inp {
+    width: 270px;
+    height: 40px;
+    border: 1px solid #667081;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    color: #667081;
+    &:focus {
+      outline: none;
+      border-color: #26C17E;
+    }
+  }
+
+  &__submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 103px;
+    height: 40px;
+    background-color: #26C17E;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__error {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: red;
+    margin-bottom: 5px;
+  }
+}
+
+.skills-form__field.invalid .skills-form__skill-inp {
+  border: 1.5px solid red;
+  color: red;
+}
+
+.skills-form__field.invalid .skills-form__skill-inp:focus {
+  outline: none;
+  border-color: red;
+}
+
+.skills-form__field.invalid {
+  margin-bottom: 5px;
+}
+
+.skills-form__submit-btn.disabled {
+  color: #222935;
+  background-color: #667081;
+  cursor: not-allowed;
+}

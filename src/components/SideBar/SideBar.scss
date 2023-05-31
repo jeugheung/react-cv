@@ -1,0 +1,50 @@
+@import '../../utils/mixins';
+
+.side-nav-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #222935;
+  width: 250px;
+  height: 100%;
+  color: white;
+  padding-top: 20px;
+  transition: width 0.5s ease, opacity 0.5s ease;
+  @include break-md {
+    width: 54px;
+  }
+}
+
+.side-nav-container .nav-upper {
+  transition: width 0.8s ease, opacity 0.5s ease;
+}
+
+.side-nav-container-NX {
+  width: 0; 
+}
+
+.side-nav-container-NX .nav-upper {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  right: -30px;
+  top: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-image: url('../../assets/images/Menu.png');
+}
+
+
+
+
+
+
+
+
+
+

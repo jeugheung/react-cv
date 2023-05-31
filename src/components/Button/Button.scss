@@ -1,0 +1,72 @@
+@import '../../utils/mixins';
+
+.button-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  height: 40px;
+  background: #222935;
+  border-radius: 5px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    background: #26C17E;
+  }
+}
+
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  bottom: 40px;
+  width: 107px;
+  height: 43px;
+  left: 60px;
+  background-color: #222935;
+  border: 0px;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  @include break-md {
+    width: 40px;
+    height: 30px;
+    left: 5px;
+    background-color: #26C17E;
+  }
+  
+  &:hover {
+    background: #26C17E;
+  }
+  svg {
+    display: flex;
+    width: 14px;
+    height: 14px;
+    color: #FFFFFF;
+  }
+  p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    @include break-md {
+      display: none;
+    }
+  }
+}
